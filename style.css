@@ -67,7 +67,7 @@ body {
     margin: 0 auto;
     padding: 15px;
     border: 2px solid #000;
-    background-color: darkblue;
+    background-color: rgb(0, 0, 66);
 }
 
 header {
@@ -142,13 +142,21 @@ h1 {
 /* ==========================MEDIA QUARIES============================= */
 
 
+
+/* ============================320p=========================== */
+
+
 @media screen and (max-width:320px) {
+    body {
+        font-size: 0.75em;             /*  Поменял размер шрифта */
+    }
+    
     .wrap {
         margin: 5px;
         border: 1px solid #000;
         padding: 3px;
         max-width: 302px;
-        min-height: 750px;
+        min-height: 700px;
         margin: 0 0;
     }
 
@@ -164,14 +172,16 @@ h1 {
         padding: 3px;
         border: 1px solid blue;
         max-width: 296px;
+        margin-left: 0;
         margin-top: 5px;
+        float: none;
     }
 
     nav { 
         padding: 3px;
         border: 1px solid blue;
         max-width: 296px;
-        height: 90px;
+        height: 60px;
     }
 
     footer {
@@ -184,5 +194,108 @@ h1 {
 
     #logo_img {
         position: static;
+    }
+}
+
+/* ===================================================================== */
+
+
+
+
+/* =======================================480p====================================== */
+
+
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .wrap {
+        margin: 5px;
+        border: 1px solid #000;
+        padding: 3px;
+        max-width: 470px;
+        min-height: 750px;
+        margin: 0 0;
+        margin-right: 0;
+    }
+
+    header {
+        padding: 3px;
+        border: 1px solid blue;
+        max-width: 460px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        border: 1px solid blue;
+        width: 458px;
+        height: 90px;
+    }
+
+    main {
+        min-width: 297px;
+        max-width: 458px;
+        margin-left: 0;
+    }
+
+    footer {
+        max-width: 458px;
+        margin-left: 0;
+        border: 1px solid blue;
+    }
+
+    #logo_img {
+        position: static;
+    }
+}
+
+/* ================================================================= */
+
+
+/* ========================================720p========================================= */
+
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    .wrap {
+        border: 1px solid #000;
+        padding: 5px;
+        min-width: 471px;
+        max-width: 708px;
+        min-height: 850px;
+        margin: 0 0;
+        margin-right: 0;
+    }
+
+    header {
+        padding: 3px;
+        border: 1px solid blue;
+        min-width: 463px;
+        max-width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo_img {
+        position: static;
+        justify-content: space-around;
+    }
+
+    main {
+        border: 1px solid blue;
+        padding: 3px;
+        width: 700px;
+        min-height: 500px;
+    }
+
+    nav {
+        border: 1px solid blue;
+        padding: 3px;
+        width: 700px;
+        height: 95px;
+    }
+
+    footer {
+        width: 696px;
+        margin-left: 0;
+        border: 1px solid blue;
     }
 }
